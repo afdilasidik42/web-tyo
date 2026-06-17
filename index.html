@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — [Romadhon Prasetyo Utomo]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Romadhon Prasetyo Utomo<span class="logo-dot">.</span></a>
+      <nav class="nav-menu">
+        <a href="#home"       class="nav-link">Home</a>
+        <a href="#about"      class="nav-link">About</a>
+        <a href="#skills"     class="nav-link">Skills</a>
+        <a href="#projects"   class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact"    class="nav-link">Contact</a>
+      </nav>
+      <!-- Mobile hamburger (CSS-only toggle via checkbox) -->
+      <label class="hamburger" for="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+    </div>
+    <!-- Mobile dropdown -->
+    <nav class="mobile-menu">
+      <a href="#home"       class="nav-link-m">Home</a>
+      <a href="#about"      class="nav-link-m">About</a>
+      <a href="#skills"     class="nav-link-m">Skills</a>
+      <a href="#projects"   class="nav-link-m">Projects</a>
+      <a href="#experience" class="nav-link-m">Experience</a>
+      <a href="#contact"    class="nav-link-m">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Mahasiswa Semester 6 · Telkom University</p>
+          <h1 class="hero-title">
+            Information Technology<br />
+            Student &amp;<br />
+            <span class="hero-accent">Future Software Engineer</span>
+          </h1>
+          <p class="hero-sub">
+            Membangun solusi digital yang bermakna — dari web, mobile, hingga analisis data.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact"  class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Profile photo placeholder -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Profile photo placeholder">
+              <circle cx="100" cy="80"  r="45" fill="#444"/>
+              <ellipse cx="100" cy="185" rx="65" ry="45" fill="#444"/>
+            </svg>
+          </div>
+          <div class="hero-photo-ring"></div>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label">01 — About</div>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">
+              Saya adalah mahasiswa Teknologi Informasi semester 6 di Telkom University yang memiliki
+              ketertarikan dalam pengembangan perangkat lunak, pengembangan web, dan analisis data.
+              Saya senang mempelajari teknologi baru serta membangun solusi digital yang bermanfaat.
+            </p>
+            <p class="about-body">
+              Dengan latar belakang akademik yang kuat dan pengalaman mengerjakan berbagai proyek kampus
+              maupun freelance, saya terbiasa bekerja lintas domain, dari front-end hingga desain antarmuka
+              dan eksplorasi data. Tujuan saya adalah terus berkembang sebagai software engineer yang
+              mampu memberi dampak nyata.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-value">6</span>
+              <span class="stat-label">Semester Aktif</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">TU</span>
+              <span class="stat-label">Telkom University</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">IT</span>
+              <span class="stat-label">Information Technology</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">SE</span>
+              <span class="stat-label">Software Engineering Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="interest-chips">
+          <span class="chip">Software Engineering</span>
+          <span class="chip">Web Development</span>
+          <span class="chip">Mobile Development</span>
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills bg-dark" id="skills">
+      <div class="container">
+        <div class="section-label light">02 — Skills</div>
+        <h2 class="section-title light">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+          <!-- HTML -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 90%"></div>
+            </div>
+            <span class="skill-cat">Markup</span>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">CSS</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 85%"></div>
+            </div>
+            <span class="skill-cat">Styling</span>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">Java</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 75%"></div>
+            </div>
+            <span class="skill-cat">Backend / OOP</span>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 80%"></div>
+            </div>
+            <span class="skill-cat">Scripting / Data</span>
+          </div>
+
+          <!-- Flutter -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">Flutter</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 75%"></div>
+            </div>
+            <span class="skill-cat">Mobile</span>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 80%"></div>
+            </div>
+            <span class="skill-cat">Database</span>
+          </div>
+
+          <!-- UI/UX -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 70%"></div>
+            </div>
+            <span class="skill-cat">Design</span>
+          </div>
+
+          <!-- Data Analysis -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">Data Analysis</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 75%"></div>
+            </div>
+            <span class="skill-cat">Analytics</span>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">Git &amp; GitHub</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 80%"></div>
+            </div>
+            <span class="skill-cat">Version Control</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-label">03 — Projects</div>
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-index" aria-hidden="true">01</div>
+            <h3 class="project-title">Sistem Manajemen Inventori Berbasis Web</h3>
+            <p class="project-desc">
+              Aplikasi web untuk pengelolaan stok barang secara real-time. Dilengkapi fitur
+              pencatatan masuk-keluar barang, laporan stok, dan notifikasi stok menipis.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <a href="#" class="btn btn-sm">Detail →</a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-index" aria-hidden="true">02</div>
+            <h3 class="project-title">Aplikasi Mobile Pencatatan Keuangan</h3>
+            <p class="project-desc">
+              Aplikasi keuangan personal berbasis Flutter dengan fitur pencatatan pemasukan
+              &amp; pengeluaran, kategori transaksi, dan grafik ringkasan bulanan.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+            <a href="#" class="btn btn-sm">Detail →</a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-index" aria-hidden="true">03</div>
+            <h3 class="project-title">Dashboard Analisis Data Penjualan</h3>
+            <p class="project-desc">
+              Dashboard interaktif untuk visualisasi tren penjualan bulanan. Menggunakan
+              Python dengan library Pandas dan Matplotlib untuk eksplorasi dan penyajian data.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+            <a href="#" class="btn btn-sm">Detail →</a>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-index" aria-hidden="true">04</div>
+            <h3 class="project-title">Website Company Profile UMKM</h3>
+            <p class="project-desc">
+              Website modern dan responsif untuk pelaku UMKM. Menampilkan profil bisnis,
+              galeri produk, dan formulir kontak yang terintegrasi.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="#" class="btn btn-sm">Detail →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience bg-dark" id="experience">
+      <div class="container">
+        <div class="section-label light">04 — Experience</div>
+        <h2 class="section-title light">Experience</h2>
+
+        <div class="timeline">
+
+          <!-- Entry 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year">2024</span>
+                <span class="timeline-type">Project Kampus</span>
+              </div>
+              <h3 class="timeline-role">Front-End Developer</h3>
+              <p class="timeline-desc">
+                Mengembangkan antarmuka web responsif untuk sistem informasi akademik kampus.
+                Bertanggung jawab atas desain halaman, implementasi HTML/CSS, dan optimasi
+                performa tampilan lintas perangkat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025</span>
+                <span class="timeline-type">Project Akademik</span>
+              </div>
+              <h3 class="timeline-role">Mobile Developer</h3>
+              <p class="timeline-desc">
+                Membangun aplikasi mobile berbasis Flutter sebagai bagian dari proyek mata
+                kuliah pengembangan perangkat lunak. Mengimplementasikan state management,
+                navigasi multi-screen, dan integrasi REST API sederhana.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025</span>
+                <span class="timeline-type">Freelance</span>
+              </div>
+              <h3 class="timeline-role">UI/UX Designer</h3>
+              <p class="timeline-desc">
+                Merancang desain antarmuka aplikasi mobile untuk klien UMKM lokal menggunakan
+                Figma. Melakukan riset pengguna, membuat wireframe, prototype interaktif, dan
+                panduan desain yang siap diserahkan ke tim pengembang.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-label">05 — Education</div>
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-card">
+          <div class="edu-logo" aria-label="Telkom University logo placeholder">TU</div>
+          <div class="edu-detail">
+            <h3 class="edu-school">Telkom University</h3>
+            <p class="edu-degree">S1 Teknologi Informasi</p>
+            <p class="edu-year">2023 — Sekarang</p>
+            <p class="edu-focus">
+              Fokus pada Software Engineering dan Pengembangan Sistem Informasi.
+              Aktif mengikuti proyek akademik, kompetisi, dan pengembangan diri di bidang
+              teknologi digital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact bg-dark" id="contact">
+      <div class="container">
+        <div class="section-label light">06 — Contact</div>
+        <h2 class="section-title light">Get In Touch</h2>
+        <p class="contact-intro">
+          Terbuka untuk kolaborasi, proyek freelance, atau sekadar ngobrol soal teknologi.
+          Jangan ragu untuk menghubungi saya!
+        </p>
+
+        <div class="contact-grid">
+
+          <a href="mailto:nahamahasiswa@telkomuniversity.ac.id" class="contact-card">
+            <div class="contact-icon">✉</div>
+            <div class="contact-info">
+              <span class="contact-platform">Email</span>
+              <span class="contact-handle">romadhonprasetyo@telkomuniversity.ac.id</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6281234567890" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-icon">💬</div>
+            <div class="contact-info">
+              <span class="contact-platform">WhatsApp</span>
+              <span class="contact-handle">+62 896-0187-9110</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/namaMahasiswa" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-icon">⌥</div>
+            <div class="contact-info">
+              <span class="contact-platform">GitHub</span>
+              <span class="contact-handle">romadhonprasetyo.com/namaMahasiswa</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/namamahasiswa" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-icon">in</div>
+            <div class="contact-info">
+              <span class="contact-platform">LinkedIn</span>
+              <span class="contact-handle">linkedin.com/in/romadhonprasetyo</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Romadhon Prasetyo Utomo<span class="logo-dot">.</span></span>
+      <span class="footer-copy">© 2026 — All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
